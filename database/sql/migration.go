@@ -3,8 +3,8 @@ package sql
 import (
 	"os"
 
-	"dantal-backend/sdk/password"
-	"dantal-backend/src/entity"
+	"todo-backend/sdk/password"
+	"todo-backend/src/entity"
 	"gorm.io/gorm"
 )
 

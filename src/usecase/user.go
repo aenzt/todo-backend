@@ -1,11 +1,11 @@
 package usecase
 
 import (
-	"dantal-backend/sdk/errors"
-	"dantal-backend/sdk/jwt"
-	"dantal-backend/sdk/password"
-	"dantal-backend/src/entity"
-	"dantal-backend/src/repository"
+	"todo-backend/sdk/errors"
+	"todo-backend/sdk/jwt"
+	"todo-backend/sdk/password"
+	"todo-backend/src/entity"
+	"todo-backend/src/repository"
 	"github.com/gin-gonic/gin"
 )
 

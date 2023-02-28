@@ -5,7 +5,7 @@ import (
 	"strconv"
 	"time"
 
-	"dantal-backend/sdk/errors"
+	"todo-backend/sdk/errors"
 	"github.com/golang-jwt/jwt/v4"
 )
 

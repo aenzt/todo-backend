@@ -1,7 +1,7 @@
 package repository
 
 import (
-	"dantal-backend/database/sql"
+	"todo-backend/database/sql"
 )
 
 type Repository struct {

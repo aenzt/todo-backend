@@ -1,9 +1,9 @@
 package repository
 
 import (
-	"dantal-backend/database/sql"
-	"dantal-backend/sdk/errors"
-	"dantal-backend/src/entity"
+	"todo-backend/database/sql"
+	"todo-backend/sdk/errors"
+	"todo-backend/src/entity"
 	"github.com/gin-gonic/gin"
 )
 

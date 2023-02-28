@@ -3,8 +3,8 @@ package handler
 import (
 	"os"
 
-	"dantal-backend/sdk/errors"
-	"dantal-backend/src/usecase"
+	"todo-backend/sdk/errors"
+	"todo-backend/src/usecase"
 	"github.com/gin-gonic/gin"
 	"github.com/gin-gonic/gin/binding"
 )

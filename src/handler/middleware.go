@@ -3,8 +3,8 @@ package handler
 import (
 	"fmt"
 
-	"dantal-backend/sdk/errors"
-	"dantal-backend/sdk/jwt"
+	"todo-backend/sdk/errors"
+	"todo-backend/sdk/jwt"
 	"github.com/gin-gonic/gin"
 )
 

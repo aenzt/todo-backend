@@ -1,7 +1,7 @@
 package handler
 
 import (
-	"dantal-backend/src/entity"
+	"todo-backend/src/entity"
 	"github.com/gin-gonic/gin"
 )
 

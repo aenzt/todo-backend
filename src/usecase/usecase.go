@@ -1,7 +1,7 @@
 package usecase
 
 import (
-	"dantal-backend/src/repository"
+	"todo-backend/src/repository"
 )
 
 type Usecase struct {

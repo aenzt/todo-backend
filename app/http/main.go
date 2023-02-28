@@ -3,17 +3,18 @@ package main
 import (
 	"os"
 
-	"dantal-backend/database/sql"
-	"dantal-backend/src/handler"
-	"dantal-backend/src/repository"
-	"dantal-backend/src/usecase"
+	"todo-backend/database/sql"
+	"todo-backend/src/handler"
+	"todo-backend/src/repository"
+	"todo-backend/src/usecase"
+
 	"github.com/gin-gonic/gin"
 	"github.com/joho/godotenv"
 )
 
 func main() {
 	// Load .env file
-	if err := godotenv.Load(); err != nil {
+	if err := godotenv.Load(".env.dev"); err != nil {
 		panic(err)
 	}
 
