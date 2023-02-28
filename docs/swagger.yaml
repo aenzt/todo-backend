@@ -1,0 +1,89 @@
+basePath: /api/v1
+definitions:
+  entity.User:
+    properties:
+      createdAt:
+        type: integer
+      createdBy:
+        type: integer
+      deletedBy:
+        type: integer
+      id:
+        type: integer
+      isMale:
+        type: boolean
+      name:
+        type: string
+      position:
+        type: string
+      roleId:
+        type: integer
+      roleName:
+        type: string
+      updatedAt:
+        type: integer
+      updatedBy:
+        type: integer
+      username:
+        type: string
+    type: object
+  entity.UserLoginResponse:
+    properties:
+      token:
+        type: string
+      user:
+        $ref: '#/definitions/entity.User'
+    type: object
+  handler.Response:
+    properties:
+      data: {}
+      isSuccess:
+        type: boolean
+      message:
+        type: string
+    type: object
+host: localhost:8080
+info:
+  contact:
+    email: support@swagger.io
+    name: API Support
+    url: http://www.swagger.io/support
+  description: This is a sample server celler server.
+  license:
+    name: Apache 2.0
+    url: http://www.apache.org/licenses/LICENSE-2.0.html
+  termsOfService: http://swagger.io/terms/
+  title: Swagger Example API
+  version: "1.0"
+paths:
+  /login:
+    get:
+      consumes:
+      - application/json
+      description: Login User
+      produces:
+      - application/json
+      responses:
+        "200":
+          description: OK
+          schema:
+            $ref: '#/definitions/entity.UserLoginResponse'
+        "400":
+          description: Bad Request
+          schema:
+            $ref: '#/definitions/handler.Response'
+        "404":
+          description: Not Found
+          schema:
+            $ref: '#/definitions/handler.Response'
+        "500":
+          description: Internal Server Error
+          schema:
+            $ref: '#/definitions/handler.Response'
+      summary: Login
+      tags:
+      - auth
+securityDefinitions:
+  BasicAuth:
+    type: basic
+swagger: "2.0"
